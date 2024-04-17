@@ -16,7 +16,7 @@ h1{
   box-sizing:border-box;
 }
 ::root{
-  --accent-color: #34495e;
+  --accent-color:#34495e;
   --bg-color:#ecf0f1;
   --sub-font:"georgia",sans-serif;
   --main-font:""Concert One", sans-serif;
@@ -25,8 +25,8 @@ h1{
 
 body{
   font-family:var(--sub-font);
-  font-weight:300
-  backgroud-color:var(--)
+ font-weight:900;
+ background-color: var(--bg-color);
   color:#111;
   font-size:1.2rem;
 }
@@ -36,5 +36,23 @@ hr{
   height:5px;
   background-color:#34495e;
     border:none;
+}
+h1,h2,h3,.title{
+  font-familu:var(--main-font);
+  font-weight:900;
+}
+.title{
+  color:var(--accent-color);
+}
 
+.wrapper{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:calc(100vw/var(--g-ratio));
+  height:100vh;
+  min-width:800px;
+  margin:0 auto;
+  background-color:inherit;
 }
