@@ -83,7 +83,43 @@ const promptUser = () => {
 
 this.getHeight = () => {
   height = prompt('Pick Height:1, 2, 3, 4')||4;
+  height = parseInt(height);
+  if(height == 1 || height == 2 || height == 3|| height==4){
+    height = height * 64;
+  return;
+} else {
+  this.getHeight();
 }
+};
+
+this.getColor = () => {
+  color = prompt ('choose color: Red Blue Green')||'red';
+  color = color.toLowerCase();
+  if (color == 'red' || color == 'blue'|| color == 'green'){
+    return;
+  }else {
+    this.getColor();
+  }
+};
+
+this.appendImg = () => {
+  img = document.createElement('img');
+  let size = 'width:' + height + 'px;height:' + height +'px;';
+  if (color == 'blue'){
+    img.setAttribute('src','imgs/ninja1.png')
+    img.setAttribute('style',size);
+    container.appendChild(img);
+  } else if (color == 'green'){
+    img.setAttribute('src','img/ninja2.png');
+    img.setAttribute('style',size);
+    container.appendChild(img);
+  } else if (color == 'red'){
+    img.setAttribute('src','img/ninja3.png');
+    img.setAttribute('style',size);
+    container.appendChild(img);
+  }
+};
+
 
 
   
