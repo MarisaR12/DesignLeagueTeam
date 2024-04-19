@@ -50,4 +50,37 @@ function Ninjas(name,age,height,color){
   container.appendChild(coinImg);
 
 $('#coin-img').animate({top:'60%',opacity:1},250);
+$('#coin-img').animate({top:'70%', opacity:0},250,()=>{
+  $('#coin-img').remove();
+  button.style.setProperty('background-color','transparent');
+  button.style.setProperty('border-color','var(--accent-color)');
+  button.style.setProperty('color','var(--accent-color');
+});
+};
+this.pipe =() =>{
+  pipeSfx.play();
+};
+this.powerUp=() =>{
+  powerUpSfx.play();
+};
+
+const promptUser = () => {
+  let name = prompt ('Pick a name:') || 'Ninja';
+  let age;
+  let height;
+  let color;
+
+  this.getAge = () =>{
+    age = prompt('Pick an age:')||'18';
+    age = parseInt(age);
+    if(isNaN(age)){
+      this.getAge();
+    }else{
+      return;
+    }
+    }
+  };
+
+
+
   
