@@ -57,7 +57,14 @@ function Ninjas(name, age, height, color) {
       button.style.setPropery('border-color', 'var(--accent-color)');
       button.style.setProperty('color', 'var(--accent-color');
     });
-    
+  };
+  this.pipe = () => {
+    pipeSfx.play();
+  };
+  this.powerUp = () => {
+    powerUpSfx.play();
+  };
+}
     
 
 
