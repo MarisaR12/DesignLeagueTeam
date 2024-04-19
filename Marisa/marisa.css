@@ -62,3 +62,8 @@ h1,h2,h3,.title{
   padding:5rem 0;
 }
 /*main content*/
+
+.top-container{
+  display:flex;
+  width:100%
+}
