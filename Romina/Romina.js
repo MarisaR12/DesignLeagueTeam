@@ -125,14 +125,37 @@ const promptUser = () => {
     const btnContainer = document.queryselector('.btns-container');
     btnContainer.removechild(btn);
     btnContainer.innerHTML =
-      "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> /n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> /n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Up</button>";
+      "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Up</button>";
     const newBtns = document.queryselectorAll('button');
     for (let i = 0; i < newBtns.lenght; i++ {
       newBtns[i].style.setProperty('margin-left', '1.5rem');
     }
 
     //Add floor
-    const floor
+    const floor = document.createElement('div');
+    floor.setAttribute('class', 'floor');
+    container.appendChild(floor);
+    floor.innerHTML = 
+      'Name: ' +
+      ninja.name +
+      '\xa0\xa0\xa0Age: ' +
+      ninja.age +
+      '\xa0\xa0\xa0Height: ' +
+      ninja.height +
+      'px' + 
+      '\xa0\xa0\xa0Color: ' +
+      ninja.color;
+  };
+
+  this.getAge();
+  this.Height();
+  this.getColor();
+
+  ninja = new Ninjas(name, age, height, color);
+  this.appendImg();
+  this.ChangeBtns();
+};
+    
   
       
   
