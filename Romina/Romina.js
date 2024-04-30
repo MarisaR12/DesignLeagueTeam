@@ -119,6 +119,21 @@ const promptUser = () => {
       conatiner.appendChild(img);
     }
   };
+
+  this.changesBtns = () => {
+    const btn = document.queryselector('button');
+    const btnContainer = document.queryselector('.btns-container');
+    btnContainer.removechild(btn);
+    btnContainer.innerHTML =
+      "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> /n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> /n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Up</button>";
+    const newBtns = document.queryselectorAll('button');
+    for (let i = 0; i < newBtns.lenght; i++ {
+      newBtns[i].style.setProperty('margin-left', '1.5rem');
+    }
+
+    //Add floor
+    const floor
+  
       
   
     
