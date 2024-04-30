@@ -65,6 +65,62 @@ function Ninjas(name, age, height, color) {
     powerUpSfx.play();
   };
 }
+
+const promptUser = () => {
+  let name = prompt('Pick a name:') || 'Ninja';
+  let age;
+  let height;
+  let color;
+
+  this.getAge = () => {
+    age = prompt('Pick an age:') || '18';
+    age = parseInt(age);
+    if (isNaN(age)) {
+      this.getAge();
+    } else {
+      return;
+    }
+};
+
+  this.getHeight= () => {
+    height = prompt('Pick height: 1, 2, 3, 4') || 4;
+    height = parseInt(height);
+    if (height === 1 || height === 2 || height === 3 || height === 4) {
+      height = height * 64;
+      return;
+    } else {
+      this.getHeight();
+    }
+  };
+  this.getColor = () => {
+    color = prompt('Choose color: Red Blue Green') || 'red';
+    color = color.toLowerCase();
+    if (color === 'red' || color === 'blue' || color === 'green') {
+      return;
+    } else {
+      this.getgetColor();
+    }
+  };
+
+  this.appedImg = () => {
+    img = document.createElement('img');
+    let size = 'width:' + height + 'px;height:' + height + 'px;';
+    if (color === 'blue') {
+      img.setAttribute('src', 'img/ninja1.png');
+      img.setAttribute('style', size);
+      container.appendChild(img);
+    } else if (color === 'green') {
+      img.setAttribute('src', 'imgs/ninja2.png');
+      img.setAttribute('style', size);
+      container.appendChild(img);
+    } else if (color === 'red') {
+      img.setAttribute('src', 'img/ninja3.png');
+      img.setAttribute('style', size);
+      conatiner.appendChild(img);
+    }
+  };
+      
+  
     
 
 
