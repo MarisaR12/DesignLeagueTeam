@@ -42,7 +42,7 @@ html {
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.banner{
+#banner{
   border: 3px solid #ffffff;
   box-shadow: 1px 3px 30px 1px #ffffff;
   color: white;
