@@ -7,3 +7,30 @@ html {
   left:5px;
   width:50%;
 }
+
+.menu{
+  margin: 10px;
+  padding: 10px;
+overflow: hidden; /* if I write too much it hides it and doesn't go off the page*/ 
+  position: absolute;
+  left:20px;
+  top:20px;
+  font-size: 2em;
+  text-align:left;
+  z-index:1;
+}
+.menu a{
+  background-color: #e77ecb; 
+  color:white;
+  padding:2px;
+  font-size:0.5em;
+  display:none;
+}
+.menu:hover a{ /*makes the hyperlinks disppaer*/
+  
+  display:block;
+}
+.menu a:hover{/* make a dropdown menu when hover over menu of all the hyperlinks along with when you hover over one of the options the background color and color of the text white and purple*/
+  color: #e77ecb;
+  background-color: white;
+}
