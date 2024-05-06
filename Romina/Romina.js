@@ -110,7 +110,7 @@ const promptUser = () => {
       img.setAttribute('style', size);
       container.appendChild(img);
     } else if (color === 'green') {
-      img.setAttribute('src', 'imgs/ninjaB.png');
+      img.setAttribute('src', 'img/ninjaB.png');
       img.setAttribute('style', size);
       container.appendChild(img);
     } else if (color === 'red') {
