@@ -103,18 +103,18 @@ this.getColor = () => {
 };
 
 this.appendImg = () => {
-  img = document.createElement('img');
+  img = document.createElement('imgs');
   let size = 'width:' + height + 'px;height:' + height +'px;';
   if (color == 'blue'){
-    img.setAttribute('src','img/ninja.png')
+    img.setAttribute('src','imgs/ninja.png')
     img.setAttribute('style',size);
     container.appendChild(img);
   } else if (color == 'green'){
-    img.setAttribute('src', 'img/ninja.png');
+    img.setAttribute('src', 'imgs/ninja.png');
     img.setAttribute('style',size);
     container.appendChild(img);
   } else if (color == 'red'){
-    img.setAttribute('src','img/ninja.png');
+    img.setAttribute('src','imgs/ninja.png');
     img.setAttribute('style',size);
     container.appendChild(img);
   }
