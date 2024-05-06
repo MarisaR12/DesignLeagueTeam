@@ -106,15 +106,15 @@ this.appendImg = () => {
   img = document.createElement('img');
   let size = 'width:' + height + 'px;height:' + height +'px;';
   if (color == 'blue'){
-    img.setAttribute('src','ninja.png')
+    img.setAttribute('src','img/ninja.png')
     img.setAttribute('style',size);
     container.appendChild(img);
   } else if (color == 'green'){
-    img.setAttribute('src', 'ninja.png');
+    img.setAttribute('src', 'img/ninja.png');
     img.setAttribute('style',size);
     container.appendChild(img);
   } else if (color == 'red'){
-    img.setAttribute('src','ninja.png');
+    img.setAttribute('src','img/ninja.png');
     img.setAttribute('style',size);
     container.appendChild(img);
   }
