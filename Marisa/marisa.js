@@ -103,7 +103,7 @@ this.getColor = () => {
 };
 
 this.appendImg = () => {
-  img = document.createElement('imgs');
+  img = document.createElement('img');
   let size = 'width:' + height + 'px;height:' + height +'px;';
   if (color == 'blue'){
     img.setAttribute('src','imgs/ninja.png')
