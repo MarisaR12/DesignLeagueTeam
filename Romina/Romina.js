@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
 });
 
 const coinSfx = new Sfx('sfx/Mario Coin.wav');
-const pipeSfx = new sfx('sfx/Mario Pipe.wav');
+const pipeSfx = new Sfx('sfx/Mario Pipe.wav');
 const powerUpSfx = new Sfx('sfx/Mario Powerup.wav');
 const container = document.queryselector('.content');
 let ninja;
