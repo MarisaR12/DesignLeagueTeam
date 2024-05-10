@@ -5,6 +5,18 @@ html {
 body{
   background-color:#699A83 ;
 }
+
+.pixelify-sans-<uniquifier> {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1{
+
+   font-family: "Pixelify Sans", sans-serif;
+}
 .slides{
   position:absolute;
   left:5px;
