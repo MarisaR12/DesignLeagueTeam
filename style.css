@@ -16,6 +16,7 @@ body{
 h1{
 
    font-family: "Pixelify Sans", sans-serif;
+   letter-spacing: 0.05cm;
 }
 .slides{
   position:absolute;
@@ -82,11 +83,6 @@ h2{
   margin:15px;
   padding: 5px;
 background-color: #A06848;
-}
-
-h1{
-  
-  letter-spacing: 0.05cm;
 }
 
 #description{
