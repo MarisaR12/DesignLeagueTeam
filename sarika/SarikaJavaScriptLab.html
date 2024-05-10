@@ -89,7 +89,7 @@ function moveBack(){
   else{
     pos--
     elem.style.top = pos + "px"
-    elem.style.left = pos + "px"
+    elem.style.right = pos + "px"
     }
   }
 }
@@ -107,7 +107,7 @@ function moveDown(){
   else{
     pos++
     elem.style.top = pos + "px"
-    elem.style.right = pos +"px"
+    elem.style.bottom = pos +"px"
     }
   }
 }
@@ -124,8 +124,8 @@ function moveUp(){
     }
   else{
     pos--
+    elem.style.botoom = pos + "px"
     elem.style.top = pos + "px"
-    elem.style.right = pos + "px"
     }
   }
 }
