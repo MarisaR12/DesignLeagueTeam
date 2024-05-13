@@ -10,7 +10,7 @@ function Sfx(src) {
   this.sound.setAttribute('preload', 'auto');
   this.sound.setAttribute('controls', 'none');
   this.sound.style.display = 'none';
-document.body.appendChild(this.sound);
+  document.body.appendChild(this.sound);
   this.play = function() {
     this.sound.play();
   };
@@ -34,7 +34,7 @@ function Ninjas(name, age, height, color) {
 
     //coin effect
     const coinImg = document.createElement('img');
-    coinImg.setAttribute('src', 'img/coin.png');
+    coinImg.setAttribute('src', 'imgs/coin.png');
     coinImg.setAttribute('id', 'coin-img');
     coinImg.style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px)';
     container.appendChild(coinImg);
