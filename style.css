@@ -50,4 +50,10 @@ background-image:url("website.png");
   color:white;
 }
 
+#boy{
+  height:40px;
+  width:40px;
+  image-align:right;
+}
+
 
