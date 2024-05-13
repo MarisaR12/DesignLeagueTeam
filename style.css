@@ -42,7 +42,7 @@ h2{
   height:230px;
   margin:15px;
   padding: 5px;
-background-image:"website.png";
+background-image:url("website.png");
 }
 
 #description{
