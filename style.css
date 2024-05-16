@@ -62,22 +62,15 @@ background-image:url("website.png");
   left:1%;
   top:158px;
 }
-#left{
-  position: absolute;
-  left: 1px;
-  margin:2px;
-  padding:2px;
-  border:1px solid white;
-  width:49.5%;
-  height:950px;
+#slides{
+  border: 2px dashed white;
+  vertical-align:right;
 }
-
-#right{
-  position: absolute;
-  right: 1px;
-  margin:2px;
-  padding:2px;
-  border:1px solid white;
-  width:49.5%;
-  height:1050px;
+#figma{
+  border:2px dashed white;
+  vertical-align:left;
+}
+#game{
+  vertical-align:right;
+  border:2px white dashed;
 }
