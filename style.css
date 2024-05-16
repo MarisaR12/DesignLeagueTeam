@@ -27,9 +27,9 @@ h1{
 }
 
 .slides{
-  position:absolute;
-  left:5px;
-  width:100%;
+vertical-align:right;
+  display:inline-block;
+  padding:1rem 1rem;
 }
 h2{
   font-family:"Poetsen One", sans-serif;
@@ -68,6 +68,5 @@ background-image:url("website.png");
 }
 .game{
   position:absolute;
-  right:100px;
+  left:5px;
   width:100%;
-
