@@ -68,6 +68,7 @@ background-image:url("website.png");
   height:640px;
   display:inline-block;
   padding:1rem 1rem;
+  width:50%
 }
 #figma{
   border:2px dashed white;
