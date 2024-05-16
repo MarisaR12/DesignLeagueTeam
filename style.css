@@ -63,11 +63,9 @@ background-image:url("website.png");
   top:158px;
 }
 #slides{
-  position: absolute;
-  right: 0px;
-  width: 50%;
-  padding: 10px;
-  height:640px;
+ position:absolute;
+  right:5px;
+  width:50%
 }
 #‎figma‎{
   position: absolute;
@@ -79,5 +77,5 @@ background-image:url("website.png");
 #game{
  position:absolute;
   left:5px;
-  widht:50%
+  width:50%
 }
