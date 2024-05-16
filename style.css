@@ -62,4 +62,10 @@ background-image:url("website.png");
   left:1%;
   top:158px;
 }
+.game {
+  position: absolute;
+  right: 0px;
+  width: 50%px;
+  padding: 10px;
+}
 
