@@ -63,12 +63,11 @@ background-image:url("website.png");
   top:158px;
 }
 #slides{
-  border: 2px dashed white;
-  vertical-align:right;
-  height:640px;
-  display:inline-block;
-  padding:1rem 1rem;
-  width:50%
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
 }
 #figma{
   border:2px dashed white;
