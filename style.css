@@ -65,12 +65,15 @@ background-image:url("website.png");
 #slides{
   position: absolute;
   right: 0px;
-  width: 300px;
+  width: 50%;
   padding: 10px;
 }
 #figma{
-  vertical-align:left;
+   position: absolute;
+  right: 0px;
+  width: 50%;
+  padding: 40px;
 }
 #game{
-  vertical-align:right;
+ 
 }
