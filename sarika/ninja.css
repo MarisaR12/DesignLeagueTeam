@@ -1,0 +1,359 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/*12 grip layout*/
+.layout{
+border: 2px solid #b573a3;
+display: grid;
+grid:
+  "span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 span12" 1fr
+  "span6 span6 span6 span6 span6 span6 . . . . . ." 1fr
+  ". . . . . span3 span3 span3 . . . ." 1fr
+  ". . . . span1 . . . . . . ." 1fr
+  / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap:5px;
+}
+.span12{grid-area:span12; background-color: #f8e2f2;}
+.span6{grid-area:span6; background-color: #f8e2f2;}
+.span3{grid-area:span3; background-color: #f8e2f2;}
+.span1{grid-area:span1; background-color: #f8e2f2;}
+
+/*3x3*/
+.layout2{
+border: 2px solid #db8ac5;
+width: 99;
+height: 300px;
+display: grid;
+grid-template-rows: repeat(3, 1fr);
+grid-template-columns: repeat(3, 1fr);
+gap: 5px;
+}
+.x3{
+  border: 2px solid #db8ac5;
+  background-color: #f8e2f2;
+}
+/*Holy Grail*/
+.layout3{
+  border: 2px solid #b573a3;
+  width: 99%;
+  height: 300px;
+  display: grid;
+  grid:
+    "header header header" auto
+    "leftSide body rightSide" 1fr
+    "footer footer footer" auto
+    /auto 1fr auto;
+  gap: 5px;
+}
+.header{grid-area: header; background-color: #f8e2f2;}
+.leftSide{grid-area: leftSide; background-color: #dd97c4;}
+.rightSide{grid-area: rightSide; background-color: #dd97c4;}
+.body{grid-area: body; background-color: #f4cdea;}
+.footer{grid-area: footer; background-color: #fff0fb;}
+
+/*Side bar*/
+.layout4{
+  border: 2px solid #b573a3;
+  widht: 99%;
+  height: 300px;
+  display: grid;
+  grid:
+    "sidebar body1" 1fr
+  / auto 1fr;
+  gap:5px;
+}
+.sidebar{grid-area: sidebar; background-color: #f8e2f2;}
+.body1{grid-area: body1; background-color: #df9fce;}
+
+/*Header Main Foote*/
+.layout5{
+  border: 2px solid #b573a3;
+  width: 99%;
+  height: 300px;
+  display: grid;
+  grid:
+    "header1" auto
+    "main" 1fr
+    "footer1" auto
+    / 1fr;
+  gap:5px;
+}
+.header1{grid-area: header1; background-color: #f4e2ef;}
+.main{grid-area: main; background-color: #f5c7e8;}
+.footer1{grid-area: footer1; background-color: #f4aee0;}
+
+/*Infinite Rows*/
+.layout6{
+  border: 2px solid black;
+  width: 99%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 5px;
+}
+.box{
+  border: 1px solid darkblue;
+  background-color: lightblue;
+}
+
+/* Infinite Rows with Areas */
+.layout7{
+  border: 2px solid #a880d0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 5px;
+}
+.col1Last1{
+  grid-column: 1/-1;
+}
+
+/* Flexbox Row */
+.layout8{
+  border: 2px solid #f4aee0;
+  background-color: #b573a3;
+  display: flex;
+  gap: 10px;
+}
+.box1{
+  border: 2px solid #b573a3;
+  background-color: #f4aee0;
+}
+/*Flexbox Row Wrap*/
+.layout9{
+  border: 2px solid #3b0e71;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: #f2d4ea
+}
+
+/*Flexbox Fill Space*/
+.layout10{
+  border: 2px solid #f4aee0;
+  background-color: #b573a3;
+  display: flex;
+  gap: 10px;
+}
+.grow1{
+  flex-grow: 2;
+}
+
+/*Flexbox Fill remaining*/
+.layout11{
+  border: 2px solid #3b0e71;
+  background-color: #b573a3;
+  display: flex;
+  gap: 10px;
+}
+
+/*Flexbox Fill Seperate*/
+.layout12{
+  border: 2px solid #a880d0;
+  display: flex;
+  gap:10px;
+}
+.marginLeft{
+  margin-left: auto;
+}
+
+/*own*/
+.layout13{
+   border: 2px solid #b573a3;
+    width: 99%;
+    height: 300px;
+    display: grid;
+    grid:
+      "header1" auto
+      "main" 1fr
+      "footer1" auto
+      / 1fr;
+    gap:5px;
+
+}
+
+
+/*ANIMATIONS*/
+/*2D animation X and Y axis*/
+#twoD{
+  border: 3px dashed #b573a3;
+  background-color: pink;
+}
+/*Translate Method*/
+.trans:hover{
+  transform: translate(50px, 100px);
+}
+/*Translate X Method*/
+.transX:hover{
+  transform: translateX(50px);
+}
+/*Translate Y Method*/
+.transY:hover{
+  transform: translateY(100px);
+}
+
+/*Rotate Method*/
+#rotate:hover{
+  transform: rotate(20deg);
+}
+
+/*Rotate X Method*/
+#rotateX:hover{
+  transform: rotateX(180deg);
+}
+/*Rotate Y Method*/
+#rotateY:hover{
+  transform: rotateY(180deg);
+}
+/*Scale Method*/
+#scale:hover{
+  transform: scale(2, 3);
+}
+/*Scale X Method*/
+#scaleX:hover{
+  transform: scaleX(2);
+}
+/*Scale Y Method*/
+#scaleY:hover{
+  transform: scaleY(3);
+}
+/*Skew Method*/
+#skew:hover{
+  transform: skew(20deg, 20deg);
+}
+/*Skew X Method*/
+#skewX:hover{
+  transform: skewX(20deg);
+}
+/*Skew Y Method*/
+#skewY:hover{
+  transform: skewY(20deg);
+}
+/* Matrix Method*/
+/*matrix(scaleX,skewY, skewX, scaleY, translateX, translateY)*/
+#matrix:hover{
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+#matrix2:hover{
+  transform: matrix(5, -09, 1, 0, 5, 4);
+}
+#ownMatrix:hover{
+  transform: matrix(8,15,-0.2,55,0,1);
+}
+
+/*3D animations X,Y,Z axis*/
+#threeD{
+  border: 3px dotted #5da26e;
+  background-color: #b6edb6;
+}
+/*Translate3D Method need x, y, and z*/
+#trans3D:hover{
+  transform: translate3d(50px, 100px, 150px);
+}
+
+/*rotate 3D method*/
+/*Rotate Z Method*/
+#rotateZ:hover{
+  transform: rotateY(90deg);
+}
+
+
+
+/*
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-funtion*/
+#transitions{
+  border: 3px dashed #986cac;
+  background-color: #efd4f2;
+}
+.box2{
+  width:50px;
+  height:50px;
+  background-color: #aad5cc;
+  border: 1 px solid #4f726b;
+  transition: width 2s, height 2s, background-color 2s;
+}
+#transition:hover{
+  width: 100px;
+ height: 100px;
+  background-color: #81acd5;
+}
+
+#delay{
+  transition: width 2s, height 2s, background-color 2s;
+}
+
+#delay:hover{
+  width: 100px;
+}
+
+#duration{
+  transition: background-color 4s, width 2s;
+  transition-duration: 4s;
+}
+#duration:hover{
+  background-color: #324d3e;
+  width: 80px;
+}
+#property{
+  transition-property: width ;
+}
+#property:hover{
+  width: 100px;
+}
+
+#timing{
+  transition-timing-function: ease-in-out;
+}
+#timing:hover{
+  width: 100px;
+}
+
+#animations{
+  background-color: #b98264;
+  border: 3px dashed #754733;
+}
+
+#animate{
+  animation-name: example;
+  animation-duration: 10s;
+}
+@keyframes example{
+from{background-color: #b98264}
+to{background-color: #a3333f}
+}
+
+#animate2{
+  animation-name:sample;
+  animation-duration: 10s;
+}
+@keyframes sample{
+  0%{background-color: darkcyan;}
+  25%{background-color: darkred;}
+  50%{background-color: darkblue;}
+  75%{background-color: darkgreen;}
+  100%{background-color: darkmagenta;}
+}
+
+#animate3{
+  position: relative;
+  animation-name: allOver;
+  animation-duration: 20s;
+}
+
+@keyframes allOver{
+  0%{background-color: darkcyan; left:0px; top:0px;}
+  25%{background-color: darkred; left:200px; top:0px;}
+  50%{background-color: darkblue; left:200px; top:200px;}
+  75%{background-color: darkgreen; left:0px; top:200px;}
+  100%{background-color: darkmagenta; left:0px; top:0px;}
+}
+/*persepective 3D method*/
+/*Matrix 3D Method*/
