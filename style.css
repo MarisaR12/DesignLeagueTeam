@@ -66,14 +66,11 @@ background-image:url("website.png");
   position: absolute;
   right: 0px;
   width: 300px;
-  border: 3px solid #73AD21;
   padding: 10px;
 }
 #figma{
-  border:2px dashed white;
   vertical-align:left;
 }
 #game{
   vertical-align:right;
-  border:2px white dashed;
 }
