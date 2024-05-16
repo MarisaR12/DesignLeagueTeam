@@ -77,5 +77,7 @@ background-image:url("website.png");
   height:640px;
 }
 #game{
- 
+ position:absolute;
+  left:5px;
+  widht:50%
 }
