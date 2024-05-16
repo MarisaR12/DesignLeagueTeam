@@ -65,6 +65,9 @@ background-image:url("website.png");
 #slides{
   border: 2px dashed white;
   vertical-align:right;
+  height:640px;
+  display:inline-block;
+  padding:1rem 1rem;
 }
 #figma{
   border:2px dashed white;
