@@ -62,27 +62,4 @@ background-image:url("website.png");
   left:1%;
   top:158px;
 }
-#slides{
- position:absolute;
-  right:5px;
-  width:50%;
-}
-#‎figma‎{
-   position:absolute;
-  right:5px;
-  width:50%;
-}
-#game{
- position:absolute;
-  left:5px;
-  width:50%
-}
-#content{
-  position: absolute;
-  right: 1px;
-  margin:2px;
-  padding:2px;
-  border:1px solid white;
-  width:49.5%;
-  height:1050px;
-}
+
